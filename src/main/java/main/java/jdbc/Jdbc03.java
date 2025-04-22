@@ -23,5 +23,24 @@ package main.java.jdbc;
 // Statement: 매번 컴파일
 // PreparedStatement: 사전 컴파일 >> 더 빠름
 
+// === executeQuery VS executeUpdate === //
+// 1) executeQuery
+// : select 문과 같은 쿼리문 실행 시 사용
+// - 쿼리 실행 후 결과를 ResultSet 객체로 반환: 반환된 ResultSet 객체를 통해 결과를 가져옴
+
+// 2) executeUpdate
+// : Insert, Update, Delete와 같은 dml 에서 실행결과로 영향 받은 레코드 수를 반환
+// - 반환타입이 int
+// - 행의 개수를 반환하기 때문에 rs(ResultSet) 사용 필요 X
+
+// === ResultSet 결과 처리 방법 === //
+// 1) rs.next()
+// : 다음 행 존재 여부 확인 및 이동
+
+// 2) rs.getInt("컬럼명"), rs.getString("컬럼명), rs.getDate("컬럼명")
+// : 정수값, 문자열 값, 날짜 값(DATE) 가져오기
+
+
+
 public class Jdbc03 {
 }
