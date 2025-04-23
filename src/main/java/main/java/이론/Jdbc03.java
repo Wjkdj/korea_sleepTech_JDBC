@@ -1,4 +1,4 @@
-package main.java.jdbc;
+package main.java.이론;
 
 // === SQL 실행 및 결과 처리 === //
 // Statement VS PreparedStatement VS ResultSet
